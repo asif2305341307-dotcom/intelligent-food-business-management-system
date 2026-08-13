@@ -3,11 +3,11 @@ import pandas as pd
 
 from database import initialize_database, load_orders, add_review, get_reviews
 from utils.data_utils import clean_data
-from utils.ml_models import train_models, predict_sales, predict_inventory, predict_waste
-from utils.nlp_models import train_sentiment_model, predict_sentiment
-from utils.recommendation import recommend_items
-from utils.chatbot import chatbot_response
-from utils.metrics import regression_metrics, classification_metrics
+from ml_models import train_models, predict_sales, predict_inventory, predict_waste
+from nlp_models import train_sentiment_model, predict_sentiment
+from recommendation import recommend_items
+from chatbot import chatbot_response
+from metrics import regression_metrics, classification_metrics
 
 st.set_page_config(page_title="Intelligent Food Business Management", page_icon="🍽️", layout="wide")
 
